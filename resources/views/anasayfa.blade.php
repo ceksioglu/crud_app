@@ -6,6 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>TEST</h1>
+    <div style="border: 2px solid black;">
+        <h2>Kayıt Ol</h2>
+        <form action="/kayit" method="POST">
+            @csrf
+            <input name="name" type="text" placeholder="İsim">
+            <input name="email" type="text" placeholder="E-mail">
+            <input name="password" type="password" placeholder="Şifre">
+            <button>Kayıt Ol!</button>
+        </form>
+            <div>
 </body>
 </html>
